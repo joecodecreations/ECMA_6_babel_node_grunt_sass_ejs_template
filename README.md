@@ -1,10 +1,14 @@
-# HTML5 Template With Sass, Grunt and local server
+# ECMAScript 6 using Babel (as well as Grunt, SCSS, NodeJS/Express Server utilizing EJS)
 
+I use this base template for getting up and running for writing ECMAScript/babel scripts
 
-* Base HTML5 Template
+* Babel - ECMAScript 6
+* HTML5
+* Uglify
+* Grunt
 * SASS globbing, minification to style sheet
 * NodeJS / Express web server
-* Watches SASS files for changes
+* Watches files for changes
 
 1. Install dependencies by running `npm install`
 
