@@ -1,24 +1,22 @@
-module.exports = function(grunt, pkg, paths, connect) {
-  var path = require('path');
+'use strict';
+const path = require('path');
+
+module.exports = (grunt, pkg, paths, connect) => {
   grunt.config.merge({
     connect: {
       server: {
         options: {
-
           livereload: connect.liveReloadPort,
           port: connect.port,
           hostname: connect.hostname,
           base: './public_html',
           open: {
-            target: 'http://'+connect.hostname + ':' + connect.port
+            target: 'http://' + connect.hostname + ':' + connect.port
           }
         }
       }
     },
     express: {
-      options: {
-        // Override defaults here
-      },
       dev: {
         options: {
           script: './server.js'
@@ -30,6 +28,6 @@ module.exports = function(grunt, pkg, paths, connect) {
           node_env: 'production'
         }
       }
-  }
+    }
   });
 }
